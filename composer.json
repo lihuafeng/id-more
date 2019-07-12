@@ -1,0 +1,38 @@
+{
+  "name": "id-more/id-more-info",
+  "description": "Get more info from IDS generator for PHP.",
+  "license" : "MIT",
+  "homepage": "https://github.com/lihuafeng/id-more",
+  "require": {
+    "php": "^5.4|^7.0",
+    "ext-iconv": "*"
+  },
+  "suggest": {
+
+  },
+  "authors": [
+    {
+      "name": "lihuafeng",
+      "email": "lhf2008@yeah.net",
+      "homepage": "https://github.com/lihuafeng"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "IdMoreInfo": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IdMoreInfo\\IdMoreServiceProvider"
+      ]
+    }
+  }
+}
