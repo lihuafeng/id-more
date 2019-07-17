@@ -18,7 +18,9 @@ class IdMoreServiceProvider extends ServiceProvider
 
     public function boot()
     {
-
+        $this->app->bind('idinfo', function () {
+            return new IdCardInfo();
+        });
     }
 
     /**
@@ -28,15 +30,7 @@ class IdMoreServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(
-            'active',
-            function ($app) {
-
-                $instance = new Active($app['router']->getCurrentRequest());
-
-                return $instance;
-            }
-        );
+        return ['idinfo'];
     }
 
 }
