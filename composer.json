@@ -19,7 +19,7 @@
   ],
   "autoload": {
     "psr-0": {
-      "IdMoreInfo": "src/"
+      "IdMoreInfo": "id-more-info\\src/"
     },
     "files": [
       "src/helpers.php"
